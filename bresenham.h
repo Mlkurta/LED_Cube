@@ -1,6 +1,11 @@
 #ifndef BRESENHAM_H
 #define BRESENHAM_H
 
+/*
+by Michael Kurta
+github.com/Mlkurta
+*/
+
 #include "LED.h"
 
 void endpoint3D(int, int, int, float, float, int);
@@ -511,3 +516,4 @@ void chopstick3D(){
 }
 
 #endif
+
