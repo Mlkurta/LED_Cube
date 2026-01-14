@@ -1,6 +1,11 @@
 #ifndef CORNERBOXES_H
 #define CORNERBOXES_H
 
+/*
+by Michael Kurta
+github.com/Mlkurta
+*/
+
 #include "LED.h"
 
 void cornerBoxDraw(int, int, uint8_t, uint8_t, uint8_t);
@@ -103,3 +108,4 @@ void cornerBoxDraw(int i, int j, uint8_t redColor, uint8_t greenColor, uint8_t b
 }
 
 #endif
+
