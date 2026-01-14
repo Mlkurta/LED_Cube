@@ -1,6 +1,12 @@
 #ifndef COLOR_WHEEL_H
 #define COLOR_WHEEL_H
 
+/*
+by Kevin Darrah
+www.kevindarrah.comcl
+kevin@kevindarrah.com
+*/
+
 #include "LED.h"
 
 extern unsigned long start;
@@ -84,3 +90,4 @@ void color_wheelTWO(){//*****colorWheelTwo*****colorWheelTwo*****colorWheelTwo**
 }//color wheel
 
 #endif 
+
