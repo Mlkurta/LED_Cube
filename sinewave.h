@@ -1,6 +1,12 @@
 #ifndef SINEWAVE
 #define SINEWAVE
 
+/*
+by Kevin Darrah
+www.kevindarrah.comcl
+kevin@kevindarrah.com
+*/
+
 #include "LED.h"
 
 extern unsigned long start;
@@ -117,3 +123,4 @@ void sinwaveTwo(){//*****sinewaveTwo*****sinewaveTwo*****sinewaveTwo*****sinewav
 }//SinewaveTwo
 
 #endif
+
