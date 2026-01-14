@@ -1,5 +1,10 @@
 #ifndef BOUNCY_H
 #define BOUNCY_H
+/*
+by Kevin Darrah
+www.kevindarrah.comcl
+kevin@kevindarrah.com
+*/
 
 #include "LED.h"
 
@@ -132,3 +137,4 @@ for(addr=ledcount; addr>0; addr--){
 }//bouncyv2
 
 #endif
+
