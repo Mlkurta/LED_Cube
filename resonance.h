@@ -1,6 +1,11 @@
 #ifndef RESONANCE_H
 #define RESONANCE_H
 
+/*
+by Michael Kurta
+github.com/Mlkurta
+*/
+
 #include "LED.h"
 
 extern unsigned long start;
@@ -161,3 +166,4 @@ void resonance(){
 }
 
 #endif
+
