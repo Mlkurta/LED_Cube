@@ -2,6 +2,11 @@
 #define LETTER_DISPLAY_H
 #include "LED.h"
 
+/*
+by Michael Kurta
+github.com/Mlkurta
+*/
+
 extern const byte A[],B[],C[],D[],E[],F[],G[],H[],I[],J[],K[],L[],M[],N[],O[],P[],Q[],R[],S[],T[],U[],V[],W[],X[],Y[],Z[],Sp[],Two[],Four[],Exp[];
 
 void scrollText();
@@ -304,3 +309,4 @@ byte whichChar(char letter, int i){
 }
 
 #endif
+
