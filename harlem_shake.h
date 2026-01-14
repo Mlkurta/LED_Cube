@@ -1,6 +1,12 @@
 #ifndef HARLEM_SHAKE_H
 #define HARLEM_SHAKE_H
 
+/*
+by Kevin Darrah
+www.kevindarrah.comcl
+kevin@kevindarrah.com
+*/
+
 #include "LED.h"
 
 extern unsigned long start;
@@ -580,5 +586,6 @@ delay(2);
 }//counter
 
 }//harlem SHake
+
 
 #endif
