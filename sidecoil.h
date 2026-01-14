@@ -1,6 +1,11 @@
 #ifndef SIDECOIL_H
 #define SIDECOIL_H
 
+/*
+by Michael Kurta
+github.com/Mlkurta
+*/
+
 #include "LED.h"
 void sideCoilDraw(int, int, uint8_t, uint8_t, uint8_t);
 
@@ -224,5 +229,6 @@ void sideCoilDraw(int k, int timeDelay, uint8_t redColor, uint8_t greenColor, ui
             break;
     }
 }
+
 
 #endif
