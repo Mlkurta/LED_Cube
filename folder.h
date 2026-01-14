@@ -1,6 +1,12 @@
 #ifndef FOLDER_H
 #define FOLDER_H
 
+/*
+by Kevin Darrah
+www.kevindarrah.comcl
+kevin@kevindarrah.com
+*/
+
 #include "LED.h"
 
 extern unsigned long start;
@@ -458,3 +464,4 @@ if(side==0){
 }//folder
 
 #endif
+
