@@ -1,6 +1,11 @@
 #ifndef STATICK_H
 #define STATICK_H
 
+/*
+by Michael Kurta
+github.com/Mlkurta
+*/
+
 #include "LED.h"
 
 extern unsigned long start, sTwo;
@@ -45,3 +50,4 @@ void statick(){
 }
 
 #endif
+
