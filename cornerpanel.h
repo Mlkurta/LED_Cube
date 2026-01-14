@@ -1,6 +1,11 @@
 #ifndef CORNERPANEL_H
 #define CORNERPANEL_H
 
+/*
+by Michael Kurta
+github.com/Mlkurta
+*/
+
 #include "LED.h"
 
 void cornerNW(int, int);
@@ -4758,3 +4763,4 @@ void cornerNW(int b, int i){
 }
 
 #endif
+
