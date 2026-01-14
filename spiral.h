@@ -1,6 +1,11 @@
 #ifndef SPIRAL_H
 #define SPIRAL_H
 
+/*
+by Michael Kurta
+github.com/Mlkurta
+*/
+
 #include "LED.h"
 
 void spiral(){
@@ -433,3 +438,4 @@ void spiral(){
 }
 
 #endif
+
