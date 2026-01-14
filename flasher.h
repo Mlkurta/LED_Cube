@@ -1,6 +1,11 @@
 #ifndef FLASHER_H
 #define FLASHER_H
 
+/*
+by Michael Kurta
+github.com/Mlkurta
+*/
+
 #include "LED.h"
 
 void flasher();
@@ -71,5 +76,6 @@ void flasher(){
     delay(1000);
   }
 }
+
 
 #endif
