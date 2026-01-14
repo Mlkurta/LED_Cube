@@ -1,8 +1,12 @@
 #ifndef RAINBOW_FOUNTAIN_H
 #define RAINBOW_FOUNTAIN_H
 
-#include "LED.h"
+/*
+by Michael Kurta
+github.com/Mlkurta
+*/
 
+#include "LED.h"
 
 void rainbowFountain(){
   const short redFrame[18] = {15,15,15,15,10,5,0,0,0,0,0,0,0,5,10,15,15,15}; //0-17
@@ -948,3 +952,4 @@ void rainbowFountain(){
 }//end rainbowFountain
 
 #endif
+
