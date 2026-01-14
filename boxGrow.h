@@ -1,6 +1,11 @@
 #ifndef BOXGROW_H
 #define BOXGROW_H
 
+/*
+by Michael Kurta
+github.com/Mlkurta
+*/
+
 #include "LED.h"
 
 void boxGrow();
@@ -145,5 +150,6 @@ void growBoxDraw(int direction, int stage, uint8_t redColor, uint8_t greenColor,
     }
     drawCubeWireFrame(i, j, k, stage + 2, redColor, greenColor, blueColor);
 }
+
 
 #endif
