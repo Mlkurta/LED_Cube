@@ -1,6 +1,12 @@
 #ifndef RAIN_H
 #define RAIN_H
 
+/*
+by Kevin Darrah
+www.kevindarrah.comcl
+kevin@kevindarrah.com
+*/
+
 #include "LED.h"
 
 extern unsigned long start; 
@@ -133,3 +139,4 @@ ledcolor=0;
 }//rainv2
 
 #endif
+
