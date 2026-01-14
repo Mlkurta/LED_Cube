@@ -1,5 +1,10 @@
 #pragma once
 
+
+/*
+by Michael Kurta
+github.com/Mlkurta
+*/
 #include <Arduino.h>
 
 #define MAX_VOXEL_POS 7
@@ -83,4 +88,5 @@ void drawRectWireFrame(uint8_t startLevel, uint8_t startRow, uint8_t startColumn
  * octo[][] stores bitmaps for each level.
  * Each bit represents whether an LED should be on or off.
  */
+
 void drawHalfOcto(uint8_t level, uint8_t originX, uint8_t originY, uint8_t red, uint8_t green, uint8_t blue);
