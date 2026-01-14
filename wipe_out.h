@@ -1,6 +1,12 @@
 #ifndef WIPE_OUT_H
 #define WIPE_OUT_H
 
+/*
+by Kevin Darrah
+www.kevindarrah.comcl
+kevin@kevindarrah.com
+*/
+
 #include "LED.h"
 
 extern unsigned long start;
@@ -142,3 +148,4 @@ void wipe_out(){//*****wipe_out*****wipe_out*****wipe_out*****wipe_out*****wipe_
 }//wipeout
 
 #endif
+
