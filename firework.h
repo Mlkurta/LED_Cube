@@ -1,6 +1,11 @@
 #ifndef FIREWORK_H
 #define FIREWORK_H
 
+/*
+by Michael Kurta
+github.com/Mlkurta
+*/
+
 #include "LED.h"
 
 #define COORDS 2
@@ -895,3 +900,4 @@ void splode(int cnt, int pos, int ht, int clr){
 }
 
 #endif
+
