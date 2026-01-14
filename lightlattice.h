@@ -1,6 +1,11 @@
 #ifndef LIGHTLATTICE_H
 #define LIGHTLATTICE_H
 
+/*
+by Michael Kurta
+github.com/Mlkurta
+*/
+
 #include "LED.h"
 
 #define NUMLINES 4
@@ -906,3 +911,4 @@ void drawKCol(int cnt, int sector, int C, bool dir){
 }
 
 #endif
+
