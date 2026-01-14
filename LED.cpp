@@ -2,6 +2,16 @@
 #define LEP_CPP
 #include "LED.h"
 
+/*
+by Kevin Darrah
+www.kevindarrah.comcl
+kevin@kevindarrah.com
+
+revised by Michael Kurta
+github.com/Mlkurta
+*/
+
+
 uint8_t clamp_voxel(uint8_t);
 uint8_t clamp_intensity(uint8_t);
 extern uint8_t red0[], red1[], red2[], red3[], green0[], green1[], green2[], green3[], blue0[], blue1[], blue2[], blue3[];
@@ -319,5 +329,6 @@ void drawHalfOcto(uint8_t level, uint8_t originJ, uint8_t originK, uint8_t red, 
         }
     }
 }
+
 
 #endif
