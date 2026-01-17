@@ -1,7 +1,6 @@
 # LED Cube
 
-![cube](https://github.com/user-attachments/assets/7b32e9a4-b581-448a-aa7e-f3892f88abc3)
-
+<img src="https://github.com/user-attachments/assets/7b32e9a4-b581-448a-aa7e-f3892f88abc3" width="400" >
 
 ## About
 This is a repository for an 8x8x8 RGB LED cube. This cube was originally designed and created by Kevin Darrah.  
