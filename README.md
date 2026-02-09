@@ -38,7 +38,7 @@ Here's how you make the new filename + function.
 
 Create a filename:
 
-Open Arduino IDE and the "All_Anims_ESP.ino" file. In the top right, click the three dots and select "New Tab". Enter your desired filename. 
+Open Arduino IDE and the "All_Anims_ESP.ino" file. In the top right, click the three dots and select "New Tab". Enter your desired filename, with a .h at the end. 
 
 <img width="700" height="624" alt="Screenshot 2026-02-08 182315" src="https://github.com/user-attachments/assets/7590e464-d863-44c0-855f-4997a37e876f" />
 
@@ -58,4 +58,18 @@ Example program below that writes LEDs individually, one at a time, until they a
 
 
 <img width="1087" height="1179" alt="Screenshot 2026-02-08 184650" src="https://github.com/user-attachments/assets/0b58bacb-28e4-4197-a6c6-84f9a9f15c24" />
+
+## Integrating the animation in the main file.
+
+Step 1.  In "All_Anims_ESP.ino", near the top,  Type #include "YourFilename.h"
+
+<img width="600" height="682" alt="Screenshot 2026-02-08 182340" src="https://github.com/user-attachments/assets/5b7222d8-c648-4a27-8ad3-fa740bc79348" />
+
+Step 2. In the void loop() function, around line 350 or so, place the name of your animation function:
+
+<img width="600" height="488" alt="Screenshot 2026-02-08 182451" src="https://github.com/user-attachments/assets/680faae9-b86d-450d-b113-99685ab57dbf" />
+
+Good practice is to add clean(); after your function... this turns all LEDs off before the next animation (or your animation) starts.
+
+
 
