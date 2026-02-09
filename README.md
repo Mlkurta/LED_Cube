@@ -71,5 +71,5 @@ Step 2. In the void loop() function, around line 350 or so, place the name of yo
 
 Good practice is to add clean(); after your function... this turns all LEDs off before the next animation (or your animation) starts.
 
-
+Provided your code compiles without errors, your animation should work. It may not do what you want it to do, but it will "work".
 
