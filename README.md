@@ -29,3 +29,33 @@ Before sketches can be loaded onto the device, a few settings under the "tools" 
 
 
 <img width="371" height="1020" alt="Screenshot 2026-01-13 184806" src="https://github.com/user-attachments/assets/d2c849cd-c6ff-48c7-b932-e970b124a3f5" />
+
+## Making an animation
+
+You can do this one of two ways: 1. Write your animation fully in the main "All_Anims_ESP.ino" file, in the void loop() portion, or 2. Create a new filename that defines your animation function, that the main program will call. This is generally preferred, but option 1 can work for a quick test if you have access to the cube.
+
+Here's how you make the new filename + function.
+
+Create a filename:
+
+Open Arduino IDE and the "All_Anims_ESP.ino" file. In the top right, click the three dots and select "New Tab". Enter your desired filename. 
+
+<img width="700" height="624" alt="Screenshot 2026-02-08 182315" src="https://github.com/user-attachments/assets/7590e464-d863-44c0-855f-4997a37e876f" />
+
+In your new file, type "#pragma once" at the top and "include "LED.h"" below it.   
+
+<img width="700" height="548" alt="Screenshot 2026-02-08 182714" src="https://github.com/user-attachments/assets/c9cc40c8-dfef-48f8-bbbc-52f5fa548252" />
+
+Now you can create your animation function, just how you would any C function.  It's a good idea to create some variables for the cube's levels, rows and columns. The typical convention is i, j, and k respectively. Many animations will rely heavily on loops.
+
+If the IEEE group is to ever make several of these animations and we want them to all show one right after another.... it's best to put a time constraint on your function (see example at the bottom) or have it iterate through a finite number of times so the other animations show.
+
+Easiest way to keep time is to declare an unsigned long variable and say "youVariable = millis()" at the start. This creates a time stamp. You can then check that timestamp within your code. There already is a variable declared in the main file called "start"....but to access it in your file, you have to use the (C syntax) extern keyword, e.g. "extern unsigned long start;"
+
+Just know that if you use the "while( millis() - start < 20000 ){" convention, you have to keep in mind both your time constraint and how much it takes to run through one time. If you put 20 seconds in your while() condition, and you have a 1 second delay between lighting all 512 LEDs sequentially, well your program is going to take 512 seconds minimum unless you're more clever about it.
+
+Example program below that writes LEDs individually, one at a time, until they are all lit. It's really pointless to put a while loop time constraint on it, because this animation looks exactly the same every time it runs through, and no LEDs are turned off, so you don't even know it's running a second, third, n times through... but it's there anyway just to show what it looks like.
+
+
+<img width="1087" height="1179" alt="Screenshot 2026-02-08 184650" src="https://github.com/user-attachments/assets/0b58bacb-28e4-4197-a6c6-84f9a9f15c24" />
+
