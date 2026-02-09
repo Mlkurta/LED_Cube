@@ -59,7 +59,7 @@ Example program below that writes LEDs individually, one at a time, until they a
 
 <img width="1087" height="1179" alt="Screenshot 2026-02-08 184650" src="https://github.com/user-attachments/assets/0b58bacb-28e4-4197-a6c6-84f9a9f15c24" />
 
-## Integrating the animation in the main file.
+## Integrating the animation into the main file.
 
 Step 1.  In "All_Anims_ESP.ino", near the top,  Type #include "YourFilename.h"
 
