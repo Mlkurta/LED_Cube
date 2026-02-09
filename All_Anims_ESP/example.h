@@ -2,37 +2,39 @@
 
 #include "LED.h"
 
-/////////////////////////////////
-/////Example LED Cube Sketch///// 
-/////////////////////////////////
+// Variable created in "All_Anims_ESP.ino" (Parent file). Access global variables in that file with extern keyword
+// |||
+// VVV
+extern unsigned long start;    
 
+// Macro for program runtime
+const unsigned int RUNTIME_MS = 20000;
 
+// Name your animation function whatever you want
 void example(){
-  int i, j, k;
 
-  // Turns on LEDs in a doubly nested for loop; Within every verticl level, it increments every row to 8 rows, and within every row, it incrments every column to 8 columns (0 - 7)
-  // Also changes the colors of the LED depending on the level / row / column.  Uses a delay of 250 ms.  
-  // **Note** if you want to turn LEDs off, you must write a zero value to the red, green and blue brightness values
-  for(i=0;i<8;i++)
-  for(j=0;j<8;j++)
-  for(k=0;k<8;k++){
-    // void LED(int16_t level, int16_t row, int16_t column, uint8_t red, uint8_t green, uint8_t blue);
-    // Enter values 0 - 7 for level, row, and column.  Enter values (brightness --> higher = more from 0 - 15) for red, green, and blue.
-    LED(i, j, k, 8-i, 8-j, k);
-    delay(250);
+  // Create a timestamp
+  start = millis();
+
+  // Let the program run for 20 seconds, give or take. If the loop below takes 19 seconds it will have to loop through again before it's checked and ended
+  while(millis() - start < 20000){
+    int i, j , k;
+
+    // Light LEDs starting at level 0, row 0, column 0 (bottom corner)
+    // For every level (i) we increment, we increment 8 rows. For every row (j) we increment, we increment through 8 (k) columns
+    for(i = 0; i < 8; i++)
+    for(j = 0; j < 8; j++)
+    for(k = 0; k < 8; k++){
+      // LED function lights one LED at a time 
+      // enter values 0 - 7 for i (level), j(rows), and k(columns), and brightness 0-15 for red, green, and blue.
+      // e.g. LED(7, 7, 7, 15, 15, 15) creates a bright white LED color in the top corner
+      LED(i, j, k, i, 8-i, 8-i);
+
+    // Time between LEDs lit in milliseconds.
+    delay(37);
+    }
   }
-
-  // Does the exact same thing excepts it turns off the LEDs in the same order, but turns them off faster than they were turned on (less delay)
-  for(i=0;i<8;i++)
-  for(j=0;j<8;j++)
-  for(k=0;k<8;k++){
-    // void LED(int16_t level, int16_t row, int16_t column, uint8_t red, uint8_t green, uint8_t blue);
-    // Enter values 0 - 7 for level, row, and column.  Enter values (brightness --> higher = more from 0 - 15) for red, green, and blue.
-    LED(i, j, k, 8-i, 8-j, k);
-    delay(50);
-  
 }
-
 
 
 
